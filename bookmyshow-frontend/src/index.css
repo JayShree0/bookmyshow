@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-crimson: #D64045;
+  --color-crimson-hover: #BF3439;
+  --color-crimson-active: #A82A2E;
+  --color-crimson-dark: #8A1E22;
+  --color-crimson-light: #FA5D63;
+
+  --color-mint: #E9FFF9;
+  --color-mint-muted: #C4ECE3;
+  --color-mint-subtle: #79AB9F;
+
+  --color-aqua: #9ED8DB;
+  --color-aqua-hover: #86C7CB;
+  --color-aqua-light: #BEEAEC;
+  --color-aqua-dark: #6CA5A8;
+
+  --color-steel: #467599;
+  --color-steel-light: #5B8BAF;
+  --color-steel-dark: #2F5472;
+  --color-steel-muted: #385E7D;
+
+  --color-navy: #1D3354;
+  --color-navy-dark: #122239;
+  --color-navy-deep: #0C1726;
+  --color-navy-card: #182C49;
+  --color-navy-surface: #233D62;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1D3354;
+  color: #E9FFF9;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #122239;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #467599;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ED8DB;
+}
+
+/* Cinema screen curved effect */
+.cinema-screen-curve {
+  box-shadow: 0 16px 32px -4px rgba(158, 216, 219, 0.28);
+}
+
+/* Print styling for digital ticket */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-ticket-container {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 2px dashed #467599 !important;
+    box-shadow: none !important;
+    padding: 24px !important;
+  }
+}

@@ -1,0 +1,121 @@
+# ==============================================================================
+# BookMyShow Project - Root Git Ignore Rules
+# ==============================================================================
+
+# 1. Root & Subproject Build Outputs
+target/
+build/
+dist/
+dist-ssr/
+out/
+bin/
+*.class
+
+# 2. Package Managers & Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# 3. Cache & Framework Artifacts
+.vite/
+.cache/
+.eslintcache
+.stylelintcache
+
+# 4. Environment & Secret Configuration
+# Local environment variables containing credentials or database secrets
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.local
+*.local
+application-local.properties
+application-local.yml
+application-local.yaml
+application-secret*.properties
+application-secret*.yml
+application-secret*.yaml
+
+# Certificates, keys, and credentials
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+
+# Always track safe example templates
+!.env.example
+!.env.template
+
+# 5. Testing & Code Coverage Reports
+coverage/
+.nyc_output/
+.vitest/
+jacoco.exec
+jacoco-it.exec
+.surefire/
+
+# 6. Logs & Runtime Temporary Files
+logs/
+*.log
+*.log.*
+*.tmp
+*.temp
+tmp/
+temp/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+hs_err_pid*
+replay_pid*
+
+# 7. Database Backups & Container Overrides
+*.dump
+*.bak
+*.sql.bak
+*.sql.gz
+docker-compose.override.yml
+docker-compose.override.yaml
+.docker/
+
+# 8. Editor & IDE Settings
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/*
+!.vscode/extensions.json
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.metadata/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# 9. Operating System Artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+

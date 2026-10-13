@@ -1,0 +1,73 @@
+# ==============================================================================
+# BookMyShow Frontend - Git Ignore Rules
+# ==============================================================================
+
+# 1. Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# 2. Production & Build Outputs
+dist/
+dist-ssr/
+build/
+out/
+
+# 3. Cache & Framework Artifacts
+.vite/
+.cache/
+.eslintcache
+.stylelintcache
+
+# 4. Testing & Coverage Reports
+coverage/
+.nyc_output/
+.vitest/
+
+# 5. Environment & Secret Configuration
+# Ignore all local environment files that may contain real credentials or URLs
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.local
+*.local
+
+# Preserve safe configuration templates
+!.env.example
+!.env.template
+
+# 6. Logs & Debug Output
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 7. Editor & IDE Settings
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# 8. Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
